@@ -1,0 +1,269 @@
+/* Container padding */
+.accordion-container {
+  padding: 20px!important;
+}
+
+.accordion-summary-title {
+  font-weight: 600 !important; /* bold */
+  font-size: 1.2rem !important; /* slightly bigger */
+  color: rgb(40, 38, 38) !important; /* white title for gradient */
+  letter-spacing: 0.5px !important; /* modern spacing */
+  margin-bottom: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.accordion-summary-desc {
+  font-size: 0.95rem !important;
+  font-weight: 400 !important;
+  color: #3f3c3c !important; /* slightly lighter than white */
+  opacity: 0.9 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.25px !important;
+}
+
+/* Accordion Summary Container */
+/* home.css */
+.accordion-summary {
+  border-radius: 12px !important;
+  color: black !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+  padding: 2 !important; /* remove default padding */
+  transition: all 0.3s ease !important;
+  margin-bottom: 8px !important;
+}
+
+.accordion-summary-box {
+  display: flex !important;
+  flex-direction: column !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  background: inherit; /* keeps gradient if applied */
+}
+
+.accordion-summary-box:hover .accordion-summary-title {
+  transform: scale(1.02) !important;
+  color: rgba(26, 126, 66, 0.667) !important;
+}
+
+
+.accordion-summary:hover {
+  transform: scale(1.02)!important;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25)!important;
+  background-color: #fbfaf9;
+}
+
+/* Gradient Expand Icon Circle */
+.accordion-expand-icon {
+  /* background: linear-gradient(135deg, #f43f5e, #3b82f6)!important; */
+  border-radius: 20%!important;
+  width: 36px!important;
+  height: 36px!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  /* color: white!important; */
+}
+
+
+/* Accordion Details container */
+.accordion-details-box {
+  display: flex!important;
+  flex-direction: column!important;
+  /* default for mobile */
+  gap: 16px!important;
+  /* same as sx gap: 2 */
+  align-items: stretch!important;
+  min-height: 300px!important;
+  padding-top: 0!important;
+  /* md breakpoint height */
+}
+
+.accordion-details {
+  padding-top: 16px!important; /* space between summary and details */
+}
+
+/* Responsive layout for desktop */
+@media (min-width: 960px) {
+  .accordion-details-box {
+    flex-direction: row!important;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 850px) {
+  .accordion-tips-box {
+    width: 100% !important;
+  }
+}
+
+/* Screenshot container */
+.accordion-screenshot {
+  flex: 1!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+}
+
+.accordion-screenshot img {
+  max-width: 100%!important;
+  max-height: 80vh!important;
+  object-fit: contain!important;
+  border-radius: 5px!important;
+}
+
+/* Fields container */
+.accordion-fields {
+  flex: 1!important;
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: flex-start!important;
+  padding: 8px!important;
+  border-radius: 8px!important;
+  background-color: #fafafa!important;
+}
+
+
+
+/* Each field container */
+.accordion-fields-box {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 10px 12px !important;
+  border-radius: 8px !important;
+  background-color: #f5f5f5 !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 8px !important;
+  cursor: default !important;
+}
+
+.accordion-tips-box {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 10px 12px !important;
+  border-radius: 8px !important;
+  background-color: #f5f5f5 !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 8px !important;
+  cursor: default !important;
+  width: 47% !important;
+}
+
+.accordion-fields-box:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+  background-color: #e0f0ff !important;
+}
+
+/* Icon styling */
+.accordion-field-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  font-size: 20px !important;
+  background: linear-gradient(135deg, #3b82f6, #ec4899) !important;
+  border-radius: 50% !important;
+  color: white !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;
+}
+
+/* Field text container */
+.accordion-field-text {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.accordion-tips-text {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Field title */
+.accordion-field-title {
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  color: #1f2937 !important;
+  margin-bottom: 2px !important;
+}
+
+/* Field description */
+.accordion-field-desc {
+  font-size: 0.85rem !important;
+  color: #4b5563 !important;
+  line-height: 1.3 !important;
+}
+
+
+/* Container for inline steps */
+.accordion-steps-inline {
+  display: flex !important;
+  flex-wrap: wrap !important; /* allow wrap on small screens */
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+}
+
+/* Each step inline block */
+.accordion-step-inline {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 10px !important;
+  border-radius: 8px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Step number styling */
+.step-number {
+  font-weight: 700 !important;
+  color: #111 !important;
+}
+
+/* Step text */
+.step-text {
+  color: #333 !important;
+}
+
+/* Arrow style */
+.step-arrow {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+/* Different background colors for steps */
+.step-0 {
+  background-color: #e3f2fd !important; /* light blue */
+}
+
+.step-1 {
+  background-color: #e8f5e9 !important; /* light green */
+}
+
+.step-2 {
+  background-color: #fff3e0 !important; /* light orange */
+}
+
+.step-3 {
+  background-color: #fce4ec !important; /* light pink */
+}
+
+.step-4 {
+  background-color: #ede7f6 !important; /* light purple */
+}
+
+/* Hover effect */
+.accordion-step-inline:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15) !important;
+}
+
+.workflow-title {
+  font-size: 1.1rem !important;
+  margin-bottom: 8px !important;
+  color: #111 !important;
+}

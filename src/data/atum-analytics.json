@@ -1,0 +1,529 @@
+{
+  "app": {
+    "name": "ATUM Analytics",
+    "version": "2.0",
+    "description": "CRM & Business Management Platform"
+  },
+  "sections": [
+    {
+      "id": "login",
+      "title": "Login Page",
+      "description": "Sign in to ATUM Analytics using your registered username and password.",
+      "screenshot": "/images/image.jpeg",
+      "fields": [
+        {
+          "title": "Logo & Title",
+          "desc": "ATUM Analytics branding at center of screen.",
+          "icon": "🏢"
+        },
+        {
+          "title": "Username Field",
+          "desc": "Enter registered email or username.",
+          "icon": "👤"
+        },
+        {
+          "title": "Password Field",
+          "desc": "Secure password entry with show/hide toggle.",
+          "icon": "🔒"
+        },
+        {
+          "title": "Login Button",
+          "desc": "Blue button to access dashboard.",
+          "icon": "✓"
+        },
+        {
+          "title": "Reset Link",
+          "desc": "Click 'Reset here' for password recovery.",
+          "icon": "🔑"
+        },
+        {
+          "title": "Sign Up Link",
+          "desc": "New users can create account.",
+          "icon": "✚"
+        }
+      ],
+      "alert": {
+        "type": "info",
+        "title": "First Login",
+        "message": "System redirects to Change Password screen automatically on first login."
+      }
+    },
+    {
+      "id": "change-password",
+      "title": "Change Password (First Login)",
+      "description": "Set your new password when logging in for the first time.",
+      "screenshot": "/images/image.png",
+      "fields": [
+        {
+          "title": "Phone Number",
+          "desc": "Enter registered phone number for OTP.",
+          "icon": "📱"
+        },
+        {
+          "title": "Username Field",
+          "desc": "Enter username or email address.",
+          "icon": "👤"
+        },
+        {
+          "title": "Request OTP",
+          "desc": "Blue button triggers OTP delivery.",
+          "icon": "📬"
+        },
+        {
+          "title": "Sign In Link",
+          "desc": "Return to login if you have access.",
+          "icon": "↩️"
+        }
+      ],
+      "alert": {
+        "type": "success",
+        "title": "Security",
+        "message": "Password verified via OTP sent to registered mobile."
+      }
+    },
+    {
+      "id": "dashboard",
+      "title": "Dashboard Screen",
+      "description": "Central hub for business metrics and enquiry analytics.",
+      "screenshot": "/images/image-20-281-29.jpeg",
+      "fields": [
+        {
+          "title": "Date Range Filter",
+          "desc": "Blue filter bar for customizing analytics period.",
+          "icon": "📅"
+        },
+        {
+          "title": "Business Overview",
+          "desc": "Cards showing Purchases, Value, and Bookings.",
+          "icon": "📊"
+        },
+        {
+          "title": "Enquiries Overview",
+          "desc": "Overview and Graphs tabs for enquiry metrics.",
+          "icon": "📈"
+        },
+        {
+          "title": "Metrics Cards",
+          "desc": "Each card displays status count.",
+          "icon": "🔢"
+        }
+      ],
+      "alert": {
+        "type": "info",
+        "title": "Role-Based",
+        "message": "Dashboard content depends on your role and permissions."
+      }
+    },
+    {
+      "id": "leads",
+      "title": "Leads Management",
+      "description": "Manage and track leads through sales pipeline stages.",
+      "screenshot": "/images/image-20-288-29.png",
+      "fields": [
+        {
+          "title": "Lead Status Tabs",
+          "desc": "Not yet contacted, Follow ups, Booked tabs.",
+          "icon": "🏷️"
+        },
+        {
+          "title": "Select & Actions",
+          "desc": "Checkbox for bulk selection and actions.",
+          "icon": "☑️"
+        },
+        {
+          "title": "Lead Cards",
+          "desc": "Date, WhatsApp/Phone icons, name, phone number.",
+          "icon": "🎫"
+        },
+        {
+          "title": "Quick Communication",
+          "desc": "WhatsApp and Phone icons for direct contact.",
+          "icon": "💬"
+        }
+      ],
+      "alert": {
+        "type": "success",
+        "title": "Communication",
+        "message": "Use icons to contact leads. Communication is tracked automatically."
+      }
+    },
+    {
+      "id": "create-lead",
+      "title": "Create New Lead",
+      "description": "Add new potential customer to your lead pipeline.",
+      "screenshot": "/images/image-20-287-29.png",
+      "fields": [
+        {
+          "title": "Customer Name",
+          "desc": "REQUIRED. Enter full customer name.",
+          "icon": "👤",
+          "required": true
+        },
+        {
+          "title": "Mobile Number",
+          "desc": "REQUIRED. Type 10-digit number.",
+          "icon": "📱",
+          "required": true
+        },
+        {
+          "title": "Email ID",
+          "desc": "Optional. For follow-up communications.",
+          "icon": "✉️"
+        },
+        {
+          "title": "Gender",
+          "desc": "Optional. Select Male, Female, Other.",
+          "icon": "⚧"
+        },
+        {
+          "title": "Profession",
+          "desc": "Select customer profession.",
+          "icon": "💼"
+        },
+        {
+          "title": "Company Name",
+          "desc": "Enter company name for B2B tracking.",
+          "icon": "🏢"
+        },
+        {
+          "title": "Campaign",
+          "desc": "Select marketing campaign source.",
+          "icon": "📣"
+        },
+        {
+          "title": "Choose Item",
+          "desc": "REQUIRED. Select interested product.",
+          "icon": "📦",
+          "required": true
+        }
+      ],
+      "alert": {
+        "type": "info",
+        "title": "Mandatory Fields",
+        "message": "Fields with red asterisk (*) are required. Others are optional."
+      }
+    },
+    {
+      "id": "add-followup",
+      "title": "Add Follow-up",
+      "description": "Schedule and track follow-ups with leads.",
+      "screenshot": "/images/image-20-285-29.png",
+      "fields": [
+        {
+          "title": "Enquiry State",
+          "desc": "Shows 'Following Up' as state.",
+          "icon": "📝"
+        },
+        {
+          "title": "Subject",
+          "desc": "Enter follow-up subject.",
+          "icon": "📄"
+        },
+        {
+          "title": "Get back Date",
+          "desc": "Select next follow-up date.",
+          "icon": "📅"
+        },
+        {
+          "title": "Interest Level",
+          "desc": "Indicate purchase likelihood.",
+          "icon": "⭐"
+        },
+        {
+          "title": "Statement",
+          "desc": "Add detailed follow-up notes.",
+          "icon": "📋"
+        },
+        {
+          "title": "Save Button",
+          "desc": "Save to move to Follow-up stage.",
+          "icon": "💾"
+        }
+      ],
+      "alert": {
+        "type": "success",
+        "title": "Lead Movement",
+        "message": "Lead moves from 'Not Yet Contacted' to 'Follow-up' stage after save."
+      }
+    },
+    {
+      "id": "booking-lead",
+      "title": "Booking a Lead",
+      "description": "Convert follow-ups to bookings when customer commits to purchase.",
+      "screenshot": "/images/image-20-283-29.png",
+      "fields": [
+        {
+          "title": "Enquiry State",
+          "desc": "Select 'Booked'.",
+          "icon": "✓",
+          "required": true
+        },
+        {
+          "title": "Booked Quantity",
+          "desc": "REQUIRED. Enter item quantity.",
+          "icon": "🔢",
+          "required": true
+        },
+        {
+          "title": "Booked Value",
+          "desc": "REQUIRED. Enter financial value.",
+          "icon": "💰",
+          "required": true
+        },
+        {
+          "title": "Booked On",
+          "desc": "REQUIRED. Select booking date.",
+          "icon": "📅",
+          "required": true
+        },
+        {
+          "title": "Measurements",
+          "desc": "REQUIRED. Select unit.",
+          "icon": "📐",
+          "required": true
+        },
+        {
+          "title": "Get back Date",
+          "desc": "REQUIRED. Next follow-up date.",
+          "icon": "📅",
+          "required": true
+        },
+        {
+          "title": "Interest Level",
+          "desc": "REQUIRED. Select level.",
+          "icon": "⭐",
+          "required": true
+        },
+        {
+          "title": "Statement",
+          "desc": "REQUIRED. Add booking notes.",
+          "icon": "📝",
+          "required": true
+        }
+      ],
+      "alert": {
+        "type": "warning",
+        "title": "All Fields",
+        "message": "Fill all mandatory fields before save."
+      }
+    },
+    {
+      "id": "field-visits",
+      "title": "Field Visits",
+      "description": "Log field visits with location details and images.",
+      "screenshot": null,
+      "fields": [
+        {
+          "title": "Add Field Visit",
+          "desc": "Plus (+) icon to create new visit.",
+          "icon": "➕"
+        },
+        {
+          "title": "Choose Group",
+          "desc": "Customer, Influencer, Staff, Dealers.",
+          "icon": "👥"
+        },
+        {
+          "title": "Choose Type",
+          "desc": "Dealer, Distributor, Retailer, etc.",
+          "icon": "🏷️"
+        },
+        {
+          "title": "Choose User",
+          "desc": "Select person. Add new if needed.",
+          "icon": "👤"
+        },
+        {
+          "title": "Choose Stage",
+          "desc": "Select Completed or Cancelled.",
+          "icon": "✓"
+        },
+        {
+          "title": "Choose Enquiry",
+          "desc": "Optional. Link to enquiry.",
+          "icon": "🔗"
+        },
+        {
+          "title": "Upload Image",
+          "desc": "Capture or upload photo.",
+          "icon": "📸"
+        },
+        {
+          "title": "Location",
+          "desc": "Auto-captures GPS coordinates.",
+          "icon": "📍"
+        },
+        {
+          "title": "Statement",
+          "desc": "Describe visit details.",
+          "icon": "📝"
+        }
+      ],
+      "alert": {
+        "type": "info",
+        "title": "Offline Mode",
+        "message": "Use offline mode for poor internet. Syncs when online."
+      }
+    },
+    {
+      "id": "close-enquiry",
+      "title": "Close Enquiry/Lead",
+      "description": "Close leads that are inactive or successfully converted.",
+      "screenshot": "/images/image-20-286-29.png",
+      "fields": [
+        {
+          "title": "Choose Dealer",
+          "desc": "Select associated dealer.",
+          "icon": "🏢"
+        },
+        {
+          "title": "Reason for Closure",
+          "desc": "Select closure reason.",
+          "icon": "❌"
+        },
+        {
+          "title": "Comments",
+          "desc": "REQUIRED. Add final notes.",
+          "icon": "💬",
+          "required": true
+        },
+        {
+          "title": "Save Button",
+          "desc": "Finalize closure.",
+          "icon": "💾"
+        }
+      ],
+      "alert": {
+        "type": "warning",
+        "title": "Final Action",
+        "message": "Once closed, lead moves to Lost/Purchased stage. Cannot reopen."
+      }
+    },
+    {
+      "id": "navigation",
+      "title": "Bottom Navigation Bar",
+      "description": "Quick access to all main modules on mobile.",
+      "screenshot": null,
+      "fields": [
+        {
+          "title": "Dashboard Tab",
+          "desc": "Grid icon. Access metrics and analytics.",
+          "icon": "📊"
+        },
+        {
+          "title": "Enquiries Tab",
+          "desc": "Document icon. Manage enquiries.",
+          "icon": "📋"
+        },
+        {
+          "title": "Leads Tab",
+          "desc": "Person icon. Access sales pipeline.",
+          "icon": "👥"
+        },
+        {
+          "title": "Menu Tab",
+          "desc": "Hamburger icon. Profile, Settings, etc.",
+          "icon": "☰"
+        }
+      ],
+      "alert": {
+        "type": "info",
+        "title": "Role-Based",
+        "message": "Tabs shown based on your role and permissions."
+      }
+    }
+  ],
+  "workflows": [
+    {
+      "id": "lead-workflow",
+      "name": "Lead Lifecycle Workflow",
+      "stages": [
+        {
+          "name": "Not Yet Contacted",
+          "color": "#e8eaed",
+          "actions": ["Call", "WhatsApp", "Follow Up"]
+        },
+        {
+          "name": "Follow Up",
+          "color": "#fff3cd",
+          "actions": ["Schedule", "Reschedule", "Convert to Booking"]
+        },
+        {
+          "name": "Booked",
+          "color": "#cfe2ff",
+          "actions": ["Track", "Update", "Close as Purchased"]
+        },
+        {
+          "name": "Purchased",
+          "color": "#d1e7dd",
+          "actions": ["Upsell", "Archive"]
+        },
+        {
+          "name": "Lost",
+          "color": "#f8d7da",
+          "actions": ["Reassign", "Archive"]
+        }
+      ]
+    },
+    {
+      "id": "enquiry-workflow",
+      "name": "Enquiry Management Workflow",
+      "stages": [
+        {
+          "name": "Pending",
+          "color": "#e8eaed",
+          "actions": ["Assign", "Contact"]
+        },
+        {
+          "name": "Follow Up",
+          "color": "#fff3cd",
+          "actions": ["Schedule", "Update"]
+        },
+        {
+          "name": "Closed",
+          "color": "#d1e7dd",
+          "actions": ["Archive"]
+        },
+        {
+          "name": "Junk",
+          "color": "#f8d7da",
+          "actions": ["Delete"]
+        }
+      ]
+    }
+  ],
+  "tips": [
+    {
+      "title": "Speed Up Entry",
+      "description": "Use bulk import for multiple leads."
+    },
+    {
+      "title": "Effective Follow-ups",
+      "description": "Set accurate get-back dates."
+    },
+    {
+      "title": "Track Campaigns",
+      "description": "Filter by campaign source."
+    },
+    {
+      "title": "Mobile Visits",
+      "description": "Use offline mode in poor areas."
+    },
+    {
+      "title": "Direct Contact",
+      "description": "WhatsApp/Phone logs interactions."
+    },
+    {
+      "title": "Security",
+      "description": "Change password regularly."
+    },
+    {
+      "title": "Accuracy",
+      "description": "Fill all mandatory fields."
+    },
+    {
+      "title": "Auto Backup",
+      "description": "Cloud auto-backs up data."
+    }
+  ]
+}
